@@ -1,0 +1,78 @@
+/* General Footer Styling */
+
+*{
+    background-color: var(--bg-black-900);
+}
+.footer {
+     /* Dark background */
+    color: --text-black-700; /* Text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Icon Section */
+.sectionalicon {
+    margin-bottom: 20px;
+}
+
+.sectionalicon a {
+    color: var(--text-black-700);
+    font-size: 24px; /* Icon size */
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sectionalicon a:hover {
+    color: var(--skin-color); /* Hover color - LinkedIn blue */
+}
+
+/* Footer Navigation */
+.footernav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footernav ul li {
+    margin: 0 15px;
+}
+
+.footernav ul li a {
+    color: var(--text-black-700);
+    font-size: 18px; /* Link font size */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footernav ul li a:hover {
+    color: var(--skin-color); /* Hover color */
+}
+
+/* Footer Bottom Section */
+.footer-bottem {
+    margin-top: 20px;
+}
+
+.footer-bottem p {
+    font-size: 14px; /* Copyright font size */
+    margin: 0;
+}
+
+.footer-bottem .designer {
+    color: var(--skin-color); /* Designer name color */
+    font-weight: bold;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footernav ul {
+        flex-direction: column;
+    }
+
+    .footernav ul li {
+        margin: 10px 0;
+    }
+}

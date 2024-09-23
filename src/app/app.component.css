@@ -1,0 +1,16 @@
+#content{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+   padding-left: 300px;
+    opacity: 1;
+}
+
+
+
+@media (max-width:1199px) {
+    #content{
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,185 @@
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: rel0ative;
+    margin-top: 60px;
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background: var(--skin-color);
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+
+.home{
+    min-height: 100%h;
+    display: flex ;
+    align-items: center;
+    color: var(--text-black-900);
+    justify-content: space-between;
+    padding: 50px 0;
+    
+}
+
+.home .home-info{
+    flex: 0 0 60%;
+    width: 60%;
+    
+}
+h3.hello{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span{
+    font-family: 'Clicker Script', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+
+h3.my-profession{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing{
+    font-size: 22px;
+    color: var(--skin-color);
+}
+.home-info p{
+    margin-bottom: 70px;
+    font-size: 16px;
+    color: var(--text-black-700);
+}
+
+.home .home-img{
+    flex: 0 0 40%;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+.home-img::after{
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 50px;
+    bottom: 30px;
+}
+
+.home-img::before{
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: 50px;
+    top: -25px;
+}
+
+.home .home-img img{
+    margin: auto;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.typing {
+    font-weight: bold;
+    border-right: .1em solid;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.typing {
+    animation: blink .75s step-end infinite;
+}
+
+
+.button,.sectionalicon{
+    flex: 0 0 50%;
+    width: 50%;
+}
+.sectionalicon {
+    margin-bottom: 20px;
+}
+
+.sectionalicon a {
+    color: var(--text-black-700);
+    font-size: 30px; /* Icon size */
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sectionalicon a:hover {
+    color: var(--skin-color); /* Hover color - LinkedIn blue */
+}
+
+
+
+@media (max-width:991px) {
+    
+    .home-img{
+        display: none;
+    }
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+        
+    }
+    h3.hello{
+        font-size: 24px;
+        
+
+        
+    }
+}
+
+
+@media (max-width:490px) {
+    .button,.sectionalicon{
+        flex: 0 0 100%;
+        width: 100%;
+        
+    }
+    .sectionalicon{
+        margin-top: 50px;
+    }
+
+    .typing{
+        font-size: 21px;
+    }
+    .name {
+        display: block;
+      }
+}

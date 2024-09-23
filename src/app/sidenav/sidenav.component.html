@@ -1,0 +1,34 @@
+<!-- Sidebar Toggle Button (Visible on smaller screens) -->
+<button id="sidebarToggle" class="nav-toggler" (click)="toggleSidebar()">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+<!-- Sidebar -->
+<nav id="sidebar" [class.show]="sidebarVisible"  class="bg-light">
+  <div class="sidebar-header">
+    <a routerLink="/"><span>J</span>akkariya <span>R</span>owther</a>
+  </div>
+
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" (click)="toHome()" routerLink="/home" routerLinkActive="active"><i class="fa-solid fa-house"></i>Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="toAbout()" routerLink="about" routerLinkActive="active"><i class="fa-solid fa-user"></i>About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="toSkills()" routerLink="skills" routerLinkActive="active"><i class="fa-solid fa-laptop"></i>Skills</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="toEducation()" routerLink="education" routerLinkActive="active"><i class="fa-solid fa-school"></i>Education</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="toGetintouch()" routerLink="get-in-touch" routerLinkActive="active"><i class="fa-solid fa-comment"></i>Get in Touch</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+

@@ -1,0 +1,142 @@
+.about-section {
+    padding: 50px 0;
+    color: var(--text-black-900);
+    
+  }
+
+  .about-section .container{
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+
+  }
+
+  .about-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .about-title h2{
+    font-size: 35px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+  }
+
+  .about-title h2::before{
+    content: '';
+    height: 4px;
+    width: 110px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 26px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+  }
+  
+  .about-content h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .about-content h3 {
+    font-size: 24px;
+    
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+  }
+
+  .about-content .about-text h3 span{
+    color: var(--skin-color);
+  }
+  
+  .about-content p, ul {
+    font-size: 16px;
+    /* line-height: 20px; */
+        margin-bottom: 0px;
+
+    color: var(--text-black-700);
+  }
+  
+  .about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  
+  
+  .button-group {
+    margin-top: 30px;
+  }
+  
+  
+  
+  .button-group .btn{
+    margin-top: 5px;
+    margin-right:15px ;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background: var(--skin-color);
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+  
+  .download-resume {
+    background-color: #28a745;
+  }
+  
+  .download-resume:hover {
+    background-color: #218838;
+  }
+  
+
+  @media(max-width:767px){
+
+    .container{
+      padding-bottom: -100px;
+    }
+  }
+  
+@media (max-width:479px) {
+
+  .button-group .download-resume {
+    margin-top: 30px;
+  }
+  
+}

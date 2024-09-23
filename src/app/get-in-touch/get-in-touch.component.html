@@ -1,0 +1,161 @@
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+        <h3 class="contact-title text-center mb-4 padd-15">Stay Connected</h3>
+        <div class="row contact-boxes">
+            <div class="col-md-3 mb-4">
+                <div class="contact-info-item shadow p-4 text-center bg-white rounded">
+                    <div class="icon1 mb-3">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                    </div>
+                    <h4>WhatsApp</h4>
+                    <p>+91 9566892033</p>
+                    <a href="https://wa.me/09566892033" target="_blank">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="contact-info-item shadow p-4 text-center bg-white rounded">
+                    <div class="icon2 mb-3">
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>jakkariyarowtherm2@gmail.com</p>
+                    <a href="mailto:jakkariyarowtherm2@gmail.com" target="_blank">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="contact-info-item shadow p-4 text-center bg-white rounded">
+                    <div class="icon3 mb-3">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                    <h4>Instagram</h4>
+                    <p>@mr_jack_2033</p>
+                    <a href="https://www.instagram.com/mr_jack_2033/" class="d-block" target="_blank">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="contact-info-item shadow p-4 text-center bg-white rounded">
+                    <div class="icon4 mb-3">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </div>
+                    <h4>LinkedIn</h4>
+                    <p>Jakkariya Rowther M</p>
+                    
+                        <a href="https://www.linkedin.com/in/jakkariya-rowther-m-a288b5306/" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                       
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div [formGroup]="form">
+            <h3 class="contact-title padd-15">SEND ME A MESSAGE</h3>
+          
+            <div class="row">
+              <div class="contact-form padd-15">
+                <div class="row">
+                  <!-- Name Field -->
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input formControlName="from_name" type="text" class="form-control" placeholder="Name" [class.is-invalid]="form.get('from_name')?.invalid && form.get('from_name')?.touched">
+                      <div *ngIf="form.get('from_name')?.invalid && form.get('from_name')?.touched" class="invalid-feedback">
+                        Name is required.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Email Field -->
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input formControlName="from_email" type="email" class="form-control" placeholder="Email" [class.is-invalid]="form.get('from_email')?.invalid && form.get('from_email')?.touched">
+                      <div *ngIf="form.get('from_email')?.invalid && form.get('from_email')?.touched" class="invalid-feedback">
+                        Enter a valid email address.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <!-- Subject Field -->
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input formControlName="subject" type="text" class="form-control" placeholder="Subject" [class.is-invalid]="form.get('subject')?.invalid && form.get('subject')?.touched">
+                      <div *ngIf="form.get('subject')?.invalid && form.get('subject')?.touched" class="invalid-feedback">
+                        Subject is required.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <!-- Message Field -->
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea formControlName="message" class="form-control" cols="30" rows="10" placeholder="Message" [class.is-invalid]="form.get('message')?.invalid && form.get('message')?.touched"></textarea>
+                      <div *ngIf="form.get('message')?.invalid && form.get('message')?.touched" class="invalid-feedback">
+                        Message is required.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="row">
+                  <!-- Submit Button -->
+                  <div class="form-item col-12 padd-15">
+                    <button type="submit" (click)="send()" class="btn" [disabled]="form.invalid">Send Message</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<section class="section">
+    <div class="container">
+        <form (ngSubmit)="submitForm()">
+            <div class="field">
+                <label for="">Name</label>
+                <input type="text" name="name" class="input" [(ngModel)]="name">
+            </div>
+
+            <div class="field">
+                <label for="">Email</label>
+                <input type="email" name="email" class="input" [(ngModel)]="email">
+            </div>
+
+            <div class="field">
+                <label for="">Name</label>
+                <textarea name="message" class="textarea" id="" [(ngModel)]="message"></textarea>
+            </div>
+
+            <button type="submit" class="button is-large ">Send!</button>
+        </form>
+    </div>
+</section>
+
+ -->
